@@ -14,6 +14,11 @@
 服务器：47.107.142.42
 项目地址：/usr/local/www/Drug-Web
 
+域名：
+
+- http://cqprecision.cn/
+- http://www.cqprecision.cn/
+
 ```sh
 # 根目录下
 
