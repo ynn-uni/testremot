@@ -3,7 +3,7 @@
     <div class="recruit-info">
       <img :src="dataSource.cover&&baseUrl+dataSource.cover" alt="" />
       <!-- <img :src="RecruitDetails.cover" alt="" /> -->
-      <div class="info">
+      <div v-if="dataSource" class="info">
         <div class="title">
           {{ dataSource.title }}
         </div>

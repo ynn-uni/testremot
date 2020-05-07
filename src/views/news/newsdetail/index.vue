@@ -110,6 +110,7 @@ export default {
           }
         }
         .dis{
+          text-indent: 28px;
           font-size:14px;
           font-weight:400;
           color:rgba(74,74,74,1);
@@ -118,8 +119,7 @@ export default {
           text-align: justify;
         }
         .share{
-          display: flex;
-          justify-content: space-between;
+          width: 100%;
           margin-top: 10px;
           align-items: flex-end;
           align-self: end;
@@ -143,13 +143,12 @@ export default {
             }
           }
           .btn-share{
-            display: flex;
-            justify-content: space-between;
             font-size:14px;;
               font-weight:400;
               color:rgba(155,155,155,1);
               line-height:20px;
             .looknum{
+              float: right;
               i{
                 margin-right: 4px;
               }
@@ -169,7 +168,6 @@ export default {
     .introduce{
       padding-bottom: 40px;
       color: #9b9b9b;
-
     }
   }
 

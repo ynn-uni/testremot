@@ -26,7 +26,7 @@
             我们的理念
           </div>
         </el-col>
-        <el-col :span="4">
+        <!-- <el-col :span="4">
           <div class="grid-content idea-item">
             <img :src="require('./../../assets/images/home_icon.png')" alt="" />
             <p class="idea-line" />
@@ -43,7 +43,7 @@
               <p>专业化医疗团队</p>
             </div>
           </div>
-        </el-col>
+        </el-col> -->
         <el-col v-for="(item,index) in idealist" :key="index" :span="4">
           <div class="grid-content idea-item">
             <div class="img">
@@ -53,6 +53,16 @@
             <h2>{{ item.title }}</h2>
             <span>{{ item.dis }}</span>
           </div>
+          <transition name="el-zoom-in-center">
+            <div class="idea-hover">
+              <h2>{{ item.title }}</h2>
+              <span>{{ item.dis }}</span>
+              <p class="hover-line" />
+              <div class="idea-content">
+                <p v-for="(inf,i) in item.info" :key="i">{{ inf }}</p>
+              </div>
+            </div>
+          </transition>
         </el-col>
       </el-row>
     </div>
@@ -77,6 +87,7 @@
         <p>HOSPITAL INTRODUCTIO</p>
         <h2>医院简介</h2>
       </div>
+
       <div class="introduce-content">
         <div class="ic-left">
           <p>
@@ -122,19 +133,44 @@ export default {
       pageName: 'home',
       idealist: [
         {
+          title: '专业',
+          cover: './image/good.png',
+          dis: 'PROFESSION',
+          info: [
+            '专业化医疗环境',
+            '高素质管理人才',
+            '专业化医疗团队'
+          ]
+        },
+        {
           title: '创新',
           cover: './image/new.png',
-          dis: 'INNOVATE'
+          dis: 'INNOVATE',
+          info: [
+            '挖掘市场目标',
+            '提高知名认知',
+            '推进科学发展'
+          ]
         },
         {
           title: '共赢',
           cover: './image/all.png',
-          dis: 'ALL-WIN'
+          dis: 'ALL-WIN',
+          info: [
+            '促进共同发展',
+            '实现基本平衡',
+            '加强投向引导'
+          ]
         },
         {
           title: '合作',
           cover: './image/he.png',
-          dis: 'HEALTHY'
+          dis: 'HEALTHY',
+          info: [
+            '一流健康管理',
+            '普及健康知识',
+            '提高健康素质'
+          ]
         }
       ]
     }
@@ -276,6 +312,11 @@ export default {
             display: flex;
             justify-content: center;
             align-content: center;
+             img{
+              width: 100%;
+              vertical-align: middle;
+              object-fit: cover;
+            }
           }
           p{
             // padding: 0;
@@ -308,7 +349,8 @@ export default {
             justify-content: center;
             background-color: rgba(51,209,208,1);
             color: #fff;
-
+            opacity: 0;
+            transition: all 0.15s linear;
             h2{
               font-size:$fontSize18;
               font-weight:400;

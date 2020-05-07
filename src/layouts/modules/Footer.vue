@@ -16,26 +16,26 @@
       <div class="contact">
         <el-row>
           <el-col :span="8">
-            <span>联系电话</span>：023-6484 6848
+            <span>联系电话</span>：023-65311341
           </el-col>
           <el-col :span="8">
-            <span>传真</span>：023-6484 6848
-          </el-col>
-        </el-row>
-        <el-row>
-          <el-col :span="8">
-            <span>地址</span>：重庆市浪尖渝力科技有限公司
-          </el-col>
-          <el-col :span="8">
-            <span>网址</span>：www.baidubaidubaidubaidubaidubaidu.com
+            <span>传真</span>：023-65311341
           </el-col>
         </el-row>
         <el-row>
           <el-col :span="8">
-            <span>邮箱</span>：023-6484 6848
+            <span>地址</span>：重庆市沙坪坝区汉渝路181号
           </el-col>
           <el-col :span="8">
-            <span>手机</span>：023-6484 6848
+            <span>网址</span>：https://www.cqch.cn
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col :span="8">
+            <span>邮箱</span>：023-65311341
+          </el-col>
+          <el-col :span="8">
+            <span>手机</span>：023-65311341
           </el-col>
         </el-row>
       </div>
@@ -47,7 +47,7 @@
     <div class="copy-support">
       <span>版权所有：重庆市药牛牛公司</span>
       <span>渝ICP21214540号</span>
-      <span>技术支持：重庆市浪尖渝力科技有限公司</span>
+      <span>技术支持：重庆市云工开物科技有限公司</span>
     </div>
   </div>
 </template>
